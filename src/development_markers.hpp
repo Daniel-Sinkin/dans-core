@@ -1,5 +1,8 @@
 // src/development_markers.hpp
 
+#ifndef DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP
+#define DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP
+
 #pragma once
 
 #include <type_traits>
@@ -34,3 +37,5 @@ template <typename T>
     return value;
 }
 }  // namespace ds_template
+
+#endif  // DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP

@@ -1,14 +1,16 @@
 // app/main.cpp
-
 #include <development_markers.hpp>
+#include <types.hpp>
+//
 #include <print>
+//
 
-[[nodiscard]] auto some_func(mut int& x) noexcept -> int
+namespace ds_template
 {
-    return x + 1;
-}
 
-auto main() -> int
+}  // namespace ds_template
+
+def main() -> int
 {
     std::println(
         "Hello, Template! Don't forget to adjust the project name in the CMakeLists.txt "
