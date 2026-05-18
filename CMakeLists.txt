@@ -68,4 +68,7 @@ add_executable(ds_template
 target_include_directories(ds_template PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
+target_precompile_headers(ds_template PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/pch.hpp
+)
 target_link_libraries(ds_template PRIVATE ds_template_warnings)

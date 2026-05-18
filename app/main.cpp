@@ -1,4 +1,12 @@
+// app/main.cpp
+
+#include <development_markers.hpp>
 #include <print>
+
+[[nodiscard]] auto some_func(mut int& x) noexcept -> int
+{
+    return x + 1;
+}
 
 auto main() -> int
 {
