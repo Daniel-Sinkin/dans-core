@@ -1,7 +1,7 @@
-// src/pch.hpp
+// include/dans/pch.hpp
 
-#ifndef DS_TEMPLATE_SRC_PCH_HPP
-#define DS_TEMPLATE_SRC_PCH_HPP
+#ifndef DANS_CORE_INCLUDE_DANS_PCH_HPP
+#define DANS_CORE_INCLUDE_DANS_PCH_HPP
 
 #pragma once
 
@@ -46,4 +46,4 @@
 #    include <arm_neon.h>  // IWYU pragma: keep
 #endif
 
-#endif  // DS_TEMPLATE_SRC_PCH_HPP
+#endif  // DANS_CORE_INCLUDE_DANS_PCH_HPP

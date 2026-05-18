@@ -1,7 +1,7 @@
-// src/development_markers.hpp
+// include/dans/development_markers.hpp
 
-#ifndef DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP
-#define DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP
+#ifndef DANS_CORE_INCLUDE_DANS_DEVELOPMENT_MARKERS_HPP
+#define DANS_CORE_INCLUDE_DANS_DEVELOPMENT_MARKERS_HPP
 
 #pragma once
 
@@ -36,13 +36,13 @@
 // Only use this on the auto for functions when using trailing return
 #define def auto
 
-namespace ds_template
+namespace dans
 {
 template <typename T>
 [[nodiscard]] constexpr def copy(const T& value) -> std::remove_cvref_t<T>
 {
     return value;
 }
-}  // namespace ds_template
+}  // namespace dans
 
-#endif  // DS_TEMPLATE_SRC_DEVELOPMENT_MARKERS_HPP
+#endif  // DANS_CORE_INCLUDE_DANS_DEVELOPMENT_MARKERS_HPP

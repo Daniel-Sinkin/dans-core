@@ -1,7 +1,7 @@
-// src/types.hpp
+// include/dans/types.hpp
 
-#ifndef DS_TEMPLATE_SRC_TYPES_HPP
-#define DS_TEMPLATE_SRC_TYPES_HPP
+#ifndef DANS_CORE_INCLUDE_DANS_TYPES_HPP
+#define DANS_CORE_INCLUDE_DANS_TYPES_HPP
 #pragma once
 
 #include <cstddef>
@@ -11,7 +11,7 @@
 #    include <stdfloat>
 #endif
 
-namespace ds_template
+namespace dans
 {
 using usize = std::size_t;
 using isize = std::ptrdiff_t;
@@ -59,6 +59,6 @@ static_assert(sizeof(i64) == 8zu);
 static_assert(sizeof(f32) == 4zu);
 static_assert(sizeof(f64) == 8zu);
 
-}  // namespace ds_template
+}  // namespace dans
 
-#endif  // DS_TEMPLATE_SRC_TYPES_HPP
+#endif  // DANS_CORE_INCLUDE_DANS_TYPES_HPP
