@@ -8,11 +8,10 @@
 #include <cstdint>
 #include <type_traits>
 #if defined(__has_include) and __has_include(<stdfloat>)
-#    include <stdfloat>
+#include <stdfloat>
 #endif
 
-namespace dans
-{
+namespace dans {
 using usize = std::size_t;
 using isize = std::ptrdiff_t;
 
@@ -39,10 +38,9 @@ using f32 = float;
 using f64 = double;
 #endif
 
-static_assert(std::is_same_v<usize, decltype(sizeof(void*))>);
+static_assert(std::is_same_v<usize, decltype(sizeof(void *))>);
 static_assert(
-    std::is_same_v<isize, decltype(static_cast<int*>(nullptr) - static_cast<int*>(nullptr))>
-);
+    std::is_same_v<isize, decltype(static_cast<int *>(nullptr) - static_cast<int *>(nullptr))>);
 
 static_assert(sizeof(byte) == 1zu);
 
@@ -59,6 +57,6 @@ static_assert(sizeof(i64) == 8zu);
 static_assert(sizeof(f32) == 4zu);
 static_assert(sizeof(f64) == 8zu);
 
-}  // namespace dans
+} // namespace dans
 
-#endif  // DANS_CORE_INCLUDE_DANS_TYPES_HPP
+#endif // DANS_CORE_INCLUDE_DANS_TYPES_HPP
