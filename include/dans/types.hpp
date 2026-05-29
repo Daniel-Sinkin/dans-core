@@ -18,8 +18,6 @@ using isize = std::ptrdiff_t;
 using uptr = std::uintptr_t;
 using iptr = std::intptr_t;
 
-using byte = std::byte;
-
 using u8 = std::uint8_t;
 using u16 = std::uint16_t;
 using u32 = std::uint32_t;
@@ -42,7 +40,7 @@ static_assert(std::is_same_v<usize, decltype(sizeof(void *))>);
 static_assert(
     std::is_same_v<isize, decltype(static_cast<int *>(nullptr) - static_cast<int *>(nullptr))>);
 
-static_assert(sizeof(byte) == 1zu);
+static_assert(sizeof(std::byte) == 1zu);
 
 static_assert(sizeof(u8) == 1zu);
 static_assert(sizeof(u16) == 2zu);
